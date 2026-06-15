@@ -36,8 +36,9 @@ tokens and components.
 | **Display** | Space Grotesk |
 | **Body** | Inter |
 | **Mono** | JetBrains Mono |
-| **Radius** | 1rem |
+| **Radius** | 1rem cards · 1.5rem sections · pill buttons |
 | **Modes** | light + dark |
+| **Responsive** | mobile → tablet → desktop (Tailwind `sm`/`md`/`lg`/`xl`) |
 | **i18n** | EN + AR with full RTL |
 
 **Frameworks** — React · Vue · Web Components (Lit)
