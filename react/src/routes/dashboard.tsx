@@ -13,7 +13,7 @@ function Bars({ series }: { series: number[] }) {
   return (
     <div className="flex h-40 items-end gap-2">
       {series.map((v, i) => (
-        <div key={i} className="flex-1 rounded-t-[var(--radius)] bg-primary" style={{ height: `${(v / max) * 100}%`, opacity: 0.4 + (i / series.length) * 0.6 }} />
+        <div key={i} className="flex-1 rounded-t-[var(--radius)] bg-gradient-to-t from-brand-300 to-primary" style={{ height: `${(v / max) * 100}%` }} />
       ))}
     </div>
   );
@@ -38,17 +38,17 @@ export function Dashboard() {
         </div>
       </div>
 
-      {/* Reach hero — full-width chart band */}
-      <div className="rounded-[var(--radius-lg)] bg-ink p-8 text-ink-foreground">
+      {/* Reach hero — full-width chart card (adapts to light/dark) */}
+      <div className="rounded-[var(--radius-lg)] border border-border bg-card p-8 shadow-[var(--shadow-card)]">
         <div className="flex items-end justify-between">
           <div>
-            <p className="font-mono text-xs uppercase tracking-wide text-ink-foreground/60">{d.chartTitle} · {d.chartCaption}</p>
+            <p className="font-mono text-xs uppercase tracking-wide text-muted-foreground">{d.chartTitle} · {d.chartCaption}</p>
             <p className="font-display text-5xl font-bold">{d.chartTotal}</p>
           </div>
-          <Badge variant="brand">+18%</Badge>
+          <Badge variant="success">+18%</Badge>
         </div>
         <div className="mt-6"><Bars series={d.series} /></div>
-        <div className="mt-2 flex justify-between font-mono text-[10px] uppercase text-ink-foreground/50">
+        <div className="mt-2 flex justify-between font-mono text-[10px] uppercase text-muted-foreground">
           {d.months.map((m) => <span key={m}>{m}</span>)}
         </div>
       </div>

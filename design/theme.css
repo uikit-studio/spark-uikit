@@ -74,9 +74,17 @@
   background-size: 22px 22px;
 }
 @utility mark {
-  background-color: var(--color-mark);
-  color: var(--color-mark-foreground);
+  /* Highlighter underline: a thin orange swipe sitting at the BOTTOM of the
+     letters, the text reading straight over it (like a real marker). We do NOT
+     recolor the text — it keeps the heading color so it stays legible over both
+     the page and the band in light AND dark. */
+  background-image: linear-gradient(var(--color-mark), var(--color-mark));
+  background-repeat: no-repeat;
+  background-size: 100% 0.32em; /* thin band */
+  background-position: 0 0.74em; /* parked at the bottom of the text */
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  padding: 0 0.18em;
+  padding: 0 0.08em;
+  margin: 0 -0.04em;
+  border-radius: 0.06em;
 }

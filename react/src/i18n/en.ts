@@ -49,6 +49,21 @@ export const en = {
     author: "Maya Chen",
     role: "Head of Growth, Globex",
   },
+  steps: {
+    heading: "Ship in",
+    headingMark: "three moves.",
+    items: [
+      { n: "01", title: "Clone the kit", body: "git clone, pnpm dev — a full marketing site running in seconds." },
+      { n: "02", title: "Make it yours", body: "Swap the tokens, fonts and copy. Every page re-themes instantly." },
+      { n: "03", title: "Launch loud", body: "Deploy anywhere — light + dark, EN/AR + RTL, fully responsive." },
+    ],
+  },
+  metrics: [
+    { value: "4,200+", label: "Teams" },
+    { value: "12k", label: "Pages shipped" },
+    { value: "60s", label: "To first deploy" },
+    { value: "MIT", label: "License" },
+  ],
   footer: { tagline: "The bold marketing kit, in every framework.", rights: "© 2026 Spark — ship loud.", links: ["Privacy", "Terms", "Contact"] },
   dashboard: {
     title: "Overview",
