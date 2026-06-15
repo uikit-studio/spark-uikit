@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "../../design/theme.css";
+
+/* Lit renders these custom elements into light DOM, so global Tailwind applies. */
+
+body {
+  margin: 0;
+}
+
+@keyframes spark-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+[dir="rtl"] .spark-marquee-track {
+  animation-direction: reverse;
+}
+.spark-marquee-track {
+  animation: spark-marquee 28s linear infinite;
+}

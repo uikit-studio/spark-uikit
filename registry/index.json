@@ -1,0 +1,98 @@
+{
+  "$schema": "https://uikit.dev/registry/v1.json",
+  "name": "spark",
+  "items": [
+    {
+      "name": "cn",
+      "type": "lib",
+      "files": [{ "path": "react/src/lib/cn.ts", "target": "lib/cn.ts" }],
+      "dependencies": ["clsx", "tailwind-merge"]
+    },
+    {
+      "name": "button",
+      "type": "component",
+      "files": [{ "path": "react/src/components/button.tsx", "target": "components/ui/button.tsx" }],
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["cn"]
+    },
+    {
+      "name": "card",
+      "type": "component",
+      "files": [{ "path": "react/src/components/card.tsx", "target": "components/ui/card.tsx" }],
+      "registryDependencies": ["cn"]
+    },
+    {
+      "name": "input",
+      "type": "component",
+      "files": [{ "path": "react/src/components/input.tsx", "target": "components/ui/input.tsx" }],
+      "registryDependencies": ["cn"]
+    },
+    {
+      "name": "badge",
+      "type": "component",
+      "files": [{ "path": "react/src/components/badge.tsx", "target": "components/ui/badge.tsx" }],
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["cn"]
+    },
+    {
+      "name": "pill",
+      "type": "component",
+      "files": [{ "path": "react/src/components/pill.tsx", "target": "components/ui/pill.tsx" }],
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["cn"]
+    },
+    {
+      "name": "mark",
+      "type": "component",
+      "files": [{ "path": "react/src/components/mark.tsx", "target": "components/ui/mark.tsx" }],
+      "registryDependencies": ["cn"]
+    },
+    {
+      "name": "marquee",
+      "type": "component",
+      "files": [{ "path": "react/src/components/marquee.tsx", "target": "components/ui/marquee.tsx" }]
+    },
+    {
+      "name": "container",
+      "type": "component",
+      "files": [{ "path": "react/src/components/container.tsx", "target": "components/ui/container.tsx" }],
+      "registryDependencies": ["cn"]
+    },
+    {
+      "name": "navbar",
+      "type": "block",
+      "files": [{ "path": "react/src/blocks/navbar.tsx", "target": "components/blocks/navbar.tsx" }],
+      "registryDependencies": ["button", "container"]
+    },
+    {
+      "name": "footer",
+      "type": "block",
+      "files": [{ "path": "react/src/blocks/footer.tsx", "target": "components/blocks/footer.tsx" }],
+      "registryDependencies": ["container"]
+    },
+    {
+      "name": "stat-cards",
+      "type": "block",
+      "files": [{ "path": "react/src/blocks/stat-cards.tsx", "target": "components/blocks/stat-cards.tsx" }],
+      "registryDependencies": ["card", "cn"]
+    },
+    {
+      "name": "landing",
+      "type": "template",
+      "files": [{ "path": "react/src/routes/landing.tsx", "target": "templates/landing.tsx" }],
+      "registryDependencies": ["button", "card", "container", "mark", "marquee", "pill", "footer"]
+    },
+    {
+      "name": "pricing",
+      "type": "template",
+      "files": [{ "path": "react/src/routes/pricing.tsx", "target": "templates/pricing.tsx" }],
+      "registryDependencies": ["button", "card", "container", "mark", "pill", "footer"]
+    },
+    {
+      "name": "dashboard",
+      "type": "template",
+      "files": [{ "path": "react/src/routes/dashboard.tsx", "target": "templates/dashboard.tsx" }],
+      "registryDependencies": ["badge", "button", "card", "container", "stat-cards"]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://uikit.dev/schema/v1.json",
+  "manifestVersion": 1,
+  "id": "spark",
+  "name": "Spark",
+  "version": "0.2.0",
+  "description": "Bold marketing kit — big type, orange, gradient accents.",
+  "author": { "name": "UIKit Team", "github": "uikit-studio" },
+  "license": "MIT",
+  "homepage": "https://uikit.studio/demos/spark/",
+  "repository": "https://github.com/uikit-studio/spark-uikit",
+
+  "categories": ["marketing", "landing"],
+  "tags": ["bold", "orange", "gradient"],
+
+  "tech": {
+    "frameworks": ["react", "vue", "web-components"],
+    "styling": "both",
+    "tailwindVersion": "^4.0.0",
+    "icons": "lucide",
+    "deps": ["class-variance-authority", "clsx", "tailwind-merge"]
+  },
+
+  "design": {
+    "tokens": "design/tokens.json",
+    "tailwindPreset": "design/tailwind-preset.js",
+    "themeCss": "design/theme.css",
+    "fonts": [{ "family": "Inter", "source": "google" }],
+    "palettes": [{ "name": "default", "primary": "#f97316" }],
+    "modes": ["light", "dark"]
+  },
+
+  "surface": {
+    "components": [
+      { "name": "Button", "react": "react/src/components/button.tsx" },
+      { "name": "Card", "react": "react/src/components/card.tsx" },
+      { "name": "Input", "react": "react/src/components/input.tsx" },
+      { "name": "Badge", "react": "react/src/components/badge.tsx" },
+      { "name": "Pill", "react": "react/src/components/pill.tsx" },
+      { "name": "Mark", "react": "react/src/components/mark.tsx" },
+      { "name": "Marquee", "react": "react/src/components/marquee.tsx" },
+      { "name": "Container", "react": "react/src/components/container.tsx" }
+    ],
+    "blocks": [
+      { "name": "Navbar" },
+      { "name": "Footer" },
+      { "name": "StatCards" }
+    ],
+    "templates": [
+      { "name": "Landing", "route": "/", "preview": "screenshots/landing.svg" },
+      { "name": "Pricing", "route": "/pricing" },
+      { "name": "Dashboard", "route": "/dashboard" },
+      { "name": "Showcase", "route": "/components" }
+    ]
+  },
+
+  "prompts": {
+    "origin": "prompts/build.md",
+    "extend": "prompts/extend.md",
+    "skillVersion": "uikit-standard@1.0"
+  },
+
+  "consume": {
+    "skill": ".claude/skills/spark",
+    "skillName": "spark-ui",
+    "steps": [
+      "git clone https://github.com/uikit-studio/spark-uikit my-app",
+      "cd my-app && npx uikit-studio init",
+      "Open in Claude Code and ask: 'build a product landing page using this kit'"
+    ],
+    "entry": "USAGE.md",
+    "requires": ["node>=20", "tailwind>=4"]
+  },
+
+  "media": {
+    "demoUrl": "https://uikit.studio/demos/spark/",
+    "screenshots": [
+      { "kind": "logo", "src": "screenshots/logo.svg" },
+      { "kind": "landing", "src": "screenshots/landing.svg" }
+    ]
+  },
+
+  "registry": {
+    "install": "npx uikit-studio add spark",
+    "components": "registry/index.json"
+  }
+}

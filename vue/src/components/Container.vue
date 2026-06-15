@@ -1,0 +1,3 @@
+<template>
+  <div class="mx-auto w-full max-w-6xl px-6"><slot /></div>
+</template>

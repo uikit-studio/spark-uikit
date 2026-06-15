@@ -1,0 +1,7 @@
+# Single-package repo. Allows the esbuild + Tailwind oxide native binaries to build.
+packages:
+  - .
+
+allowBuilds:
+  esbuild: true
+  "@tailwindcss/oxide": true
