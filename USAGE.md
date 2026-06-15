@@ -42,6 +42,15 @@ Open the repo in Claude Code and ask:
 The bundled skill (`.claude/skills/spark`) gives the AI Spark's components, tokens,
 and rules — consistent, cheap output.
 
+**Don't have the repo open?** Spark is **agent-ready** — point any agent at the URL:
+
+> Build me a website styled exactly like this design: https://uikit.studio/kit/spark —
+> it's agent-ready. Read the spec at https://uikit.studio/kit/spark/llms.txt and match
+> its tokens, fonts, radius and components.
+
+The agent reads the machine-readable spec (`llms.txt` + `manifest.json`) and rebuilds
+Spark's design in your stack. See [`AGENTS.md`](./AGENTS.md).
+
 ## Pull individual pieces into another project (shadcn-style)
 
 ```bash

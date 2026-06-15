@@ -64,6 +64,19 @@ npx uikit-studio add button card   # just the components you want
 
 See **[USAGE.md](./USAGE.md)** for the full consumer guide.
 
+## Use this design with an AI agent 🤖
+
+This kit is **agent-ready**. Point Claude Code / Cursor / Codex at it and it reproduces
+the exact design — tokens, fonts, radius, components. Paste:
+
+> Build me a website styled exactly like this design: https://uikit.studio/kit/spark —
+> it's agent-ready. Read the spec at https://uikit.studio/kit/spark/llms.txt and match
+> its color tokens (light + dark), fonts, radius and components.
+
+- **Agent spec:** <https://uikit.studio/kit/spark/llms.txt> · manifest
+  <https://uikit.studio/kit/spark/manifest.json>
+- Or point the agent **at this repo** — it reads [`AGENTS.md`](./AGENTS.md) + [`llms.txt`](./llms.txt).
+
 ---
 
 MIT © UIKit Team · part of the [uikit.studio](https://uikit.studio) gallery
