@@ -44,6 +44,11 @@ export const en = {
     ],
   },
   cta: { heading: "Ready to", headingMark: "spark something?", body: "Clone the kit and ship your page today.", button: "Make my page", note: "Free forever · no credit card · open source" },
+  quote: {
+    text: "We rebuilt our launch page in a weekend. Big type, bold color, zero fuss — it just converts.",
+    author: "Maya Chen",
+    role: "Head of Growth, Globex",
+  },
   footer: { tagline: "The bold marketing kit, in every framework.", rights: "© 2026 Spark — ship loud.", links: ["Privacy", "Terms", "Contact"] },
   dashboard: {
     title: "Overview",
