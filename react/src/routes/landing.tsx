@@ -35,7 +35,7 @@ export function Landing() {
           </p>
 
           {/* Browser mock */}
-          <div className="mx-auto mt-16 max-w-3xl overflow-hidden rounded-[--radius-lg] border border-border bg-card text-start shadow-[var(--shadow-card)]">
+          <div className="mx-auto mt-16 max-w-3xl overflow-hidden rounded-[var(--radius-lg)] border border-border bg-card text-start shadow-[var(--shadow-card)]">
             <div className="flex items-center gap-1.5 border-b border-border px-4 py-3">
               <span className="h-3 w-3 rounded-full bg-brand-400" />
               <span className="h-3 w-3 rounded-full bg-brand-200" />
@@ -84,7 +84,7 @@ export function Landing() {
       {/* Dark bento */}
       <section className="py-20">
         <Container>
-          <div className="rounded-[--radius-lg] bg-ink p-10 text-ink-foreground sm:p-16">
+          <div className="rounded-[var(--radius-lg)] bg-ink p-10 text-ink-foreground sm:p-16">
             <h2 className="max-w-xl font-display text-4xl font-bold tracking-tight sm:text-5xl">
               {t.bento.heading} <Mark>{t.bento.headingMark}</Mark>
             </h2>
@@ -93,7 +93,7 @@ export function Landing() {
               {t.bento.items.map((item) => (
                 <div
                   key={item}
-                  className="rounded-[--radius] border border-white/10 bg-white/5 p-5 font-display font-semibold"
+                  className="rounded-[var(--radius)] border border-white/10 bg-white/5 p-5 font-display font-semibold"
                 >
                   <span className="text-primary">✦</span>
                   <p className="mt-3 text-sm">{item}</p>
@@ -107,7 +107,7 @@ export function Landing() {
       {/* CTA */}
       <section className="pb-24">
         <Container>
-          <div className="dotted rounded-[--radius-lg] border border-border bg-card p-12 text-center sm:p-20">
+          <div className="dotted rounded-[var(--radius-lg)] border border-border bg-card p-12 text-center sm:p-20">
             <h2 className="mx-auto max-w-2xl font-display text-4xl font-bold tracking-tight sm:text-6xl">
               {t.cta.heading} <Mark>{t.cta.headingMark}</Mark>
             </h2>
