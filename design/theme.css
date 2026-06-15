@@ -54,10 +54,19 @@
     --color-mark-foreground: #14100b;
   }
 
-  /* Arabic prefers Cairo for both display and body. */
+  /* Arabic uses Tajawal — a crisp geometric face that carries Spark's big, bold
+     display energy far better than a generic system fallback. Mono keeps JetBrains
+     for Latin/numbers but falls back to Tajawal for Arabic glyphs (so mono labels
+     don't drop to a mismatched system font). */
   [dir="rtl"] {
-    --font-display: "Cairo", "Space Grotesk", sans-serif;
-    --font-sans: "Cairo", "Inter", sans-serif;
+    --font-display: "Tajawal", "Space Grotesk", sans-serif;
+    --font-sans: "Tajawal", "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", "Tajawal", monospace;
+  }
+  /* Arabic is cursive — wide letter-spacing breaks the glyph joins, so neutralize
+     the tracking utilities (and mono's own spacing) under RTL. */
+  [dir="rtl"] [class*="tracking-"] {
+    letter-spacing: 0;
   }
 
   html {
@@ -80,8 +89,10 @@
      the page and the band in light AND dark. */
   background-image: linear-gradient(var(--color-mark), var(--color-mark));
   background-repeat: no-repeat;
-  background-size: 100% 0.32em; /* thin band */
-  background-position: 0 0.74em; /* parked at the bottom of the text */
+  background-size: 100% 0.34em; /* thin band */
+  /* Percentage Y keeps the band parked at the bottom of the text for ANY script
+     (Latin + Arabic have different metrics — a fixed em offset only fits one). */
+  background-position: 0 88%;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
   padding: 0 0.08em;

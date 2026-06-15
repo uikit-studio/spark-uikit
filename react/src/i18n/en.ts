@@ -120,11 +120,56 @@ export const en = {
   showcase: {
     title: "Spark design system",
     sub: "Every token and component in one place. Toggle dark mode and RTL in the top bar.",
-    sections: { colors: "Colors", type: "Typography", buttons: "Buttons", pills: "Pills & badges", inputs: "Inputs", cards: "Cards" },
+    sections: {
+      colors: "Colors",
+      type: "Typography",
+      buttons: "Buttons",
+      badges: "Badges, pills & tags",
+      forms: "Form controls",
+      avatars: "Avatars",
+      feedback: "Feedback",
+      navigation: "Navigation",
+      overlays: "Overlays",
+      disclosure: "Disclosure",
+      data: "Data",
+      cards: "Cards",
+    },
     display: "Display / Space Grotesk",
     heading: "Heading / 700",
     body: "Body / Inter — the quick brown fox jumps over the lazy dog.",
     mono: "Mono / JetBrains — 0123456789",
+    buttons: { primary: "Primary", ink: "Ink", outline: "Outline", ghost: "Ghost", small: "Small", large: "Large", disabled: "Disabled", toggle: "Toggle" },
+    badges: { solid: "Solid", soft: "Soft", brand: "Brand", neutral: "Neutral", success: "Success", outline: "Outline", removable: "Removable", press: "Press" },
+    forms: {
+      email: "Email", emailPh: "you@example.com", plan: "Plan", starter: "Starter", pro: "Pro", scale: "Scale",
+      message: "Message", messagePh: "Tell us more…", checkbox: "Checkbox", switch: "Switch", monthly: "Monthly", yearly: "Yearly", volume: "Volume",
+    },
+    feedback: {
+      infoTitle: "Heads up", infoBody: "Realtime sync is on for this workspace.",
+      successTitle: "Payment received", successBody: "Invoice #1043 was paid.",
+      warnTitle: "Usage at 80%", warnBody: "Consider upgrading your plan.",
+      dangerTitle: "Card declined", dangerBody: "Update your billing details.",
+      storage: "Storage", loading: "Loading…", savedTitle: "Saved", savedBody: "Your changes are live.",
+    },
+    nav: {
+      tabs: ["Overview", "Activity", "Settings"], tabContent: "content.",
+      crumbs: ["Home", "Billing", "Invoices"], steps: ["Account", "Plan", "Payment", "Done"],
+    },
+    overlays: {
+      tooltip: "Realtime, edge-fast", hover: "Hover me", openDialog: "Open dialog",
+      dialogTitle: "Invite teammates", dialogBody: "Send an invite link to add people to this workspace.",
+      actions: "Actions", edit: "Edit", duplicate: "Duplicate", delete: "Delete",
+    },
+    faq: [
+      { q: "Is Spark responsive?", a: "Yes — every page works mobile → desktop." },
+      { q: "Does it support dark mode + RTL?", a: "Both, via tokens and a layout that flips." },
+      { q: "Can I add just one component?", a: "Yes — npx uikit-studio add button." },
+    ],
+    data: {
+      customer: "Customer", plan: "Plan", status: "Status", active: "Active", trial: "Trial",
+      emptyTitle: "No reports yet", emptyBody: "Reports you generate will show up here.", createReport: "Create report",
+    },
+    cardDemo: { title: "Card title", desc: "A short description.", body: "Body content goes here.", withAction: "With an action", doIt: "Do it" },
   },
 };
 
