@@ -10,7 +10,9 @@ Components** apps you clone and ship from.
 ![License](https://img.shields.io/badge/license-MIT-34d399)
 ![Frameworks](https://img.shields.io/badge/react%20·%20vue%20·%20web%20components-555)
 
-![Spark landing](./screenshots/landing.png)
+<video src="https://github.com/uikit-studio/spark-uikit/raw/main/screenshots/preview.webm" poster="https://github.com/uikit-studio/spark-uikit/raw/main/screenshots/landing.png" muted loop playsinline width="100%"></video>
+
+> Video not playing? [▶ Watch the preview ↗](https://github.com/uikit-studio/spark-uikit/raw/main/screenshots/preview.webm) · [screenshot ↗](./screenshots/landing.png) · [live demo ↗](https://uikit.studio/demos/spark/)
 
 **[▶ Open the live demo →](https://uikit.studio/demos/spark/)** &nbsp;·&nbsp;
 **[Gallery page →](https://uikit.studio/kit/spark)**
