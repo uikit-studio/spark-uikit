@@ -6,7 +6,7 @@ and a marquee. Light + dark, full **EN/AR + RTL**. Runnable **React, Vue and Web
 Components** apps you clone and ship from.
 
 [![Live demo](https://img.shields.io/badge/live-uikit.studio%2Fkit%2Fspark-7c5cff)](https://uikit.studio/kit/spark)
-[![CLI](https://img.shields.io/badge/cli-uikit--studio-22d3ee)](https://www.npmjs.com/package/uikit-studio)
+[![CLI](https://img.shields.io/badge/cli-uikit--cli-22d3ee)](https://www.npmjs.com/package/uikit-cli)
 ![License](https://img.shields.io/badge/license-MIT-34d399)
 ![Frameworks](https://img.shields.io/badge/react%20·%20vue%20·%20web%20components-555)
 
@@ -60,8 +60,8 @@ Tokens live in [`design/`](./design) (`tokens.json` → `theme.css` v4 +
 ## Add pieces to an existing project
 
 ```bash
-npx uikit-studio add landing       # a full template + every component it needs
-npx uikit-studio add button card   # just the components you want
+npx uikit-cli add landing       # a full template + every component it needs
+npx uikit-cli add button card   # just the components you want
 ```
 
 See **[USAGE.md](./USAGE.md)** for the full consumer guide.

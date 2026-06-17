@@ -163,7 +163,7 @@ export const en = {
     faq: [
       { q: "Is Spark responsive?", a: "Yes — every page works mobile → desktop." },
       { q: "Does it support dark mode + RTL?", a: "Both, via tokens and a layout that flips." },
-      { q: "Can I add just one component?", a: "Yes — npx uikit-studio add button." },
+      { q: "Can I add just one component?", a: "Yes — npx uikit-cli add button." },
     ],
     data: {
       customer: "Customer", plan: "Plan", status: "Status", active: "Active", trial: "Trial",

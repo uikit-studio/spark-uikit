@@ -54,8 +54,8 @@ Spark's design in your stack. See [`AGENTS.md`](./AGENTS.md).
 ## Pull individual pieces into another project (shadcn-style)
 
 ```bash
-npx uikit-studio add button card        # copy components
-npx uikit-studio add dashboard          # a full template + its dependencies
+npx uikit-cli add button card        # copy components
+npx uikit-cli add dashboard          # a full template + its dependencies
 ```
 
 ## What's inside

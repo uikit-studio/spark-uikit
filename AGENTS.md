@@ -20,7 +20,7 @@ your job is to reproduce **Spark's** exact design system in their project — no
    shapes, base radius (**1rem**), big-type display scale and the highlighter `mark`.
 3. Keep **dark mode**, **EN/AR + RTL** and a **responsive** layout.
 4. Fastest path: clone this repo and build the developer's pages inside it
-   (`cd react && pnpm install && pnpm dev`), or run `npx uikit-studio add spark`
+   (`cd react && pnpm install && pnpm dev`), or run `npx uikit-cli add spark`
    (Claude Code skill: `spark-ui`).
 
 Do not ship a thin recolor. Match the full system — that's the point of agent-ready.

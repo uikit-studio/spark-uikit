@@ -17,4 +17,4 @@ Rules when extending:
    New tokens go in `design/tokens.json` + `theme.css` first.
 4. **RTL-safe** — `text-start`, `rtl:` variants for directional glyphs.
 5. New surface items go in `uikit.json` (`surface`) and `registry/index.json`.
-   Run `npx uikit-studio validate` before committing.
+   Run `npx uikit-cli validate` before committing.

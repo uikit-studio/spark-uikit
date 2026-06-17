@@ -65,7 +65,7 @@
     "skillName": "spark-ui",
     "steps": [
       "git clone https://github.com/uikit-studio/spark-uikit my-app",
-      "cd my-app && npx uikit-studio init",
+      "cd my-app && npx uikit-cli init",
       "Open in Claude Code and ask: 'build a product landing page using this kit'"
     ],
     "entry": "USAGE.md",
@@ -81,7 +81,7 @@
   },
 
   "registry": {
-    "install": "npx uikit-studio add spark",
+    "install": "npx uikit-cli add spark",
     "components": "registry/index.json"
   }
 }
